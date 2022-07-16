@@ -1550,6 +1550,8 @@ img {
 
 .section-feedback__direction {
   font-style: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-feedback__validate {
@@ -2586,12 +2588,12 @@ img {
     margin-bottom: 2px;
   }
 
-  .section-feedback__heading-h3 {
+  .section-feedback__address-1 {
     font-size: 18px;
     line-height: 25px;
   }
 
-  .section-feedback__address {
+  .section-feedback__address-2 {
     font-size: 14px;
     line-height: 19px;
   }

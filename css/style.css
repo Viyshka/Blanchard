@@ -571,12 +571,12 @@ img {
   outline: 0;
   background-color: transparent;
   padding: 0;
-  margin-right: 9px;
   cursor: pointer;
 }
 
 .section-nav__search-button {
   padding-top: 5px;
+  margin-right: 9px;
 }
 
 .section-nav__search-input-1 {
@@ -1878,7 +1878,6 @@ img {
   .section-catalog__inner-list {
     column-count: 2;
   }
-
 }
 
 @media (max-width: 1145px) {
@@ -2202,9 +2201,9 @@ img {
     width: 100%;
   }
 
-  .section-nav__search-button-2 {
+  .section-nav__search-button-2 svg {
     width: 27px;
-    height: 29px;
+    height: 27px;
   }
 
   .section-banner__swiper-1 {
@@ -2365,7 +2364,7 @@ img {
     width: 69%;
   }
 
-  .section-nav__search-button-2 {
+  .section-nav__search-button-2 svg{
     width: 18px;
     height: 18px;
   }
@@ -2393,10 +2392,7 @@ img {
     margin-right: 0;
   }
 
-  .section-nav__search-button-2 svg{
-    width: 18px;
-    height: 18px;
-  }
+
 
   .section-nav__search-but svg {
     width: 30px;

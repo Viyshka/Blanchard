@@ -49,7 +49,7 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration { display: none; }
 
 main {
-  background-color: var(--main-color);
+  background-color: var(--white);
 }
 
 a {
@@ -108,7 +108,6 @@ img {
 }
 
 :root {
-  --main-color: #E5E5E5;
   --black: #000;
   --all: #333;
   --grey: #666;
@@ -1694,7 +1693,7 @@ img {
   transition: opacity 0.4s ease-in-out;
 }
 
-.section-feedback__Whatsapp:active, .section-feedback__Whatsapp:active::before, .section-feedback__Telegram:active ,.section-feedback__Telegram:active:before {
+.section-feedback__Whatsapp:active:not(:focus-visible), .section-feedback__Whatsapp:active::before, .section-feedback__Telegram:active:not(:focus-visible) ,.section-feedback__Telegram:active:before {
   opacity: 1;
 }
 

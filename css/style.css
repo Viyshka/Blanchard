@@ -1881,7 +1881,7 @@ img {
 
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1145px) {
   .section-nav__list {
     padding: 28.4px 0px;
   }
@@ -1953,6 +1953,7 @@ img {
 
   .section-nav__burger, .section-nav__search-button-2 {
     display: block;
+    margin: 0;
   }
 
   .section-nav__burger--active::before {
@@ -2201,6 +2202,11 @@ img {
     width: 100%;
   }
 
+  .section-nav__search-button-2 {
+    width: 27px;
+    height: 29px;
+  }
+
   .section-banner__swiper-1 {
     background-image: url("../img/jpg/slaid-1-768.jpg");
   }
@@ -2357,6 +2363,11 @@ img {
 
   .section-nav__burger-line {
     width: 69%;
+  }
+
+  .section-nav__search-button-2 {
+    width: 18px;
+    height: 18px;
   }
 
   .section-nav__burger::after {

@@ -223,9 +223,9 @@ const projectswiper = new Swiper('.section-projects__swiper', {
   loop: true,
 
   breakpoints: {
-    650: {
+    500: {
       slidesPerView: 2,
-      spaceBetween: 32,
+      spaceBetween: 20,
       slidesPerGroup: 2,
     },
 

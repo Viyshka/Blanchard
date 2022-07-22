@@ -6,6 +6,7 @@ body {
   font-weight: 400;
   color: var(--all);
   box-sizing: border-box;
+  min-height: 320px;
 }
 
 *,
@@ -107,6 +108,15 @@ img {
   }
 }
 
+@keyframes catalog-tabs {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 :root {
   --black: #000;
   --all: #333;
@@ -119,7 +129,6 @@ img {
   --violet-2: #7943A4;
   --violet-3: #D1A9F0;
   --violet-4: #C283F3;
-  --placeholder: #FFFFFFCC;
   --grey-accordion:#CACACA;
   --white-smoke: #ECECEC;
   --validate: #D11616;
@@ -152,6 +161,15 @@ img {
   list-style: none;
 }
 
+.section-nav__search-button, .section-nav__search-button-2, .section-nav__burger, .section-nav__search-but, .section-gallery__button-prev, .section-gallery__button-next {
+  border: none;
+  outline: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 .stop-scroll {
   overflow: hidden;
 }
@@ -159,6 +177,7 @@ img {
 /*нав лист*/
 .section-nav {
   background-color: var(--black);
+  position: relative;
 }
 
 .section-nav__list {
@@ -177,6 +196,7 @@ img {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .section-nav__bar-list, .section-nav__list-selects {
@@ -184,6 +204,7 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .section-nav__list-item:not(:last-child) {
@@ -237,14 +258,10 @@ img {
   --burger-height: 28px;
   --burger-line-height: 3px;
   position: relative;
-  border: none;
-  padding: 0;
   z-index: 3;
   width: var(--burger-width);
   height: var(--burger-height);
   color: var(--white);
-  background-color: transparent;
-  cursor: pointer;
   display: none;
   order: -1;
 }
@@ -282,12 +299,11 @@ img {
 /*поиск*/
 .section-nav__search-button-2 {
   display: none;
-  margin-right: 0;
 }
 
 .section-nav__search-2 {
   position: absolute;
-  top: 4%;
+  top: 30%;
   right: 5.5%;
   align-items: flex-end;
   z-index: 10;
@@ -307,7 +323,7 @@ img {
   outline: 0;
   border-bottom: 1px solid var(--white-share);
   background-color: transparent;
-  color: var(--placeholder);
+  color: var(--white);
   font-size: 20px;
 }
 
@@ -324,13 +340,14 @@ img {
   position: absolute;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 20px 0px 20px 0px;
   z-index: 5;
 }
 
 .section-nav__select-search {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .section-nav__list-selects {
@@ -339,6 +356,7 @@ img {
 
 .section-nav__select {
   position: relative;
+  padding: 23px 0px 22px 0px;
 }
 
 .section-nav__select:not(:last-child) {
@@ -398,12 +416,13 @@ img {
 }
 
 .section-nav__dropdown-wrap {
-  height: 220px;
+  max-height: 220px;
 }
 
 .section-nav__dropdown.is-active {
   position: absolute;
-  top: 51px;
+  bottom: 0;
+  transform: translateY(100%);
 }
 
 .section-nav__dropdown.is-active {
@@ -565,14 +584,6 @@ img {
   display: flex;
 }
 
-.section-nav__search-button, .section-nav__search-button-2, .section-nav__search-but {
-  border: none;
-  outline: 0;
-  background-color: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
 .section-nav__search-button {
   padding-top: 5px;
   margin-right: 9px;
@@ -583,7 +594,7 @@ img {
   outline: 0;
   padding: 0;
   width: 220px;
-  color: var(--placeholder);
+  color: var(--white);
   border-bottom: 1px solid var(--white-share);
   background-color: transparent;
   cursor: pointer;
@@ -592,6 +603,7 @@ img {
 
 .section-nav__search-input-1::placeholder {
   font-size: 18px;
+  color: var(--white);
 }
 
 .section-nav__search-input:focus-visible {
@@ -895,7 +907,7 @@ img {
 .section-gallery__cards {
   width: calc(1150 / 1600 * 100%);
   margin-right: 0;
-  padding-top: 22px;
+  padding-top: 18px;
 }
 
 .section-gallery__swiper {
@@ -964,7 +976,7 @@ img {
 .section-gallery__navigation {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .section-gallery__pagination {
@@ -1009,6 +1021,7 @@ img {
   cursor: auto;
   background-color: rgba(102,102,102, 0.5);
   border-color: transparent;
+  pointer-events: none;
 }
 
 .section-gallery__button-prev {
@@ -1016,13 +1029,13 @@ img {
 }
 
 .section-gallery__button-next::before {
-  left: 39%;
+  left: 35%;
   border-top: 1px solid var(--white);
   border-right: 1px solid var(--white);
 }
 
 .section-gallery__button-prev::before {
-  left: 39%;
+  left: 45%;
   border-left: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
 }
@@ -1040,7 +1053,7 @@ img {
   background-image: url('../img/cross.svg');
 }
 
-.modal__custom {
+.modal--custom {
   max-width: 900px;
   padding: 0;
   border-radius: 0;
@@ -1137,6 +1150,8 @@ img {
 
 .section-catalog__img-text--active {
   display: block;
+  animation-name: catalog-tabs;
+  animation-duration: 0.2s;
 }
 
 /*аккордеон*/
@@ -1196,6 +1211,7 @@ img {
 }
 
 .section-catalog__arrow {
+  position: relative;
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -1217,6 +1233,9 @@ img {
 
 .section-catalog__arrow::after {
   content: "";
+  position: absolute;
+  top: 35%;
+  left: 37%;
   display: inline-block;
   width: 11.79px;
   height: 11.79px;
@@ -1349,6 +1368,8 @@ img {
 }
 
 .section-events__button-prev, .section-events__button-next {
+  top: 51%;
+  padding: 0;
   margin: 0;
   width: 50px;
   height: 50px;
@@ -1367,11 +1388,11 @@ img {
 }
 
 .section-events__button-next {
-  right: -1.5%;
+  right: -27px;
 }
 
 .section-events__button-prev {
-  left: -1.5%;
+  left: -27px;
 }
 
 .section-events__button-prev.swiper-button-disabled,
@@ -1394,7 +1415,7 @@ img {
 
 /*секция проекты*/
 .section-projects {
-  padding: 83px 0px 78px 0px;
+  padding: 79px 0px 80px 0px;
 }
 
 .section-projects__heading-h2 {
@@ -1404,7 +1425,7 @@ img {
 .section-projects__text {
   margin: 0;
   max-width: 1080px;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 
 .section-projects__tooltip-1, .section-projects__tooltip-2, .section-projects__tooltip-3 {
@@ -1500,6 +1521,8 @@ img {
 }
 
 .section-projects__button-prev, .section-projects__button-next {
+  top: 43%;
+  padding: 0;
   margin: 0;
   width: 30px;
   height: 30px;
@@ -1518,7 +1541,7 @@ img {
 }
 
 .section-projects__button-next {
-  right: -2px;
+  right: -1px;
 }
 
 .section-projects__button-prev {
@@ -1951,7 +1974,6 @@ img {
 
   .section-nav__burger, .section-nav__search-button-2 {
     display: block;
-    margin: 0;
   }
 
   .section-nav__burger--active::before {
@@ -2414,7 +2436,7 @@ img {
   }
 
   .section-nav__search-input-2 {
-    width: 80%;
+    width: 90%;
     font-size: 23px;
   }
 

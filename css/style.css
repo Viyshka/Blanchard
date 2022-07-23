@@ -257,7 +257,7 @@ img {
   --burger-height: 28px;
   --burger-line-height: 3px;
   position: relative;
-  z-index: 3;
+  z-index: 10;
   width: var(--burger-width);
   height: var(--burger-height);
   color: var(--white);
@@ -1926,7 +1926,7 @@ img {
     justify-content: space-between;
     padding: 100px 0px 0px 48px;
     overflow-y: auto;
-    z-index: 3;
+    z-index: 8;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);

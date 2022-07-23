@@ -284,17 +284,17 @@ const projectswiper = new Swiper('.section-projects__swiper', {
 });
 
 //тултип
-tippy('.section-projects__tooltip-1', {
+tippy('.section-projects__tooltip-one', {
   content: 'Пример современных тенденций - современная методология разработки',
   maxWidth: 256,
 });
 
-tippy('.section-projects__tooltip-2', {
+tippy('.section-projects__tooltip-two', {
   content: 'В стремлении повысить качество',
   maxWidth: 256,
 });
 
-tippy('.section-projects__tooltip-3', {
+tippy('.section-projects__tooltip-three', {
   content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
   maxWidth: 256,
 });
@@ -473,12 +473,9 @@ const burger = document.querySelector('.section-nav__burger')
 const nav = document.querySelector('.section-nav__wrapper')
 const navItems = nav.querySelectorAll('.section-nav__item-link')
 const body = document.body
-const header = document?.querySelector('.section-nav')
-const headerHeight = header.offsetHeight
-const searchOpen = document.querySelector('.section-nav__search-button-2')
-const search = document.querySelector('.section-nav__search-2')
+const searchOpen = document.querySelector('.section-nav__search-button-two')
+const search = document.querySelector('.section-nav__search-two')
 const searchClose = document.querySelector('.section-nav__search-close')
-document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`)
 
 burger?.addEventListener('click', () => {
   body.classList.toggle('stop-scroll')

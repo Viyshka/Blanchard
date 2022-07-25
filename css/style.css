@@ -1944,9 +1944,14 @@ img {
     overflow-y: auto;
   }
 
+  .section-nav__bar {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 182px;
+  }
+
   .section-nav__bar-list {
     flex-direction: column;
-    margin-bottom: 182px;
   }
 
   .section-nav__list-item {

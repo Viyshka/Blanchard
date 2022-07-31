@@ -195,7 +195,7 @@ const eventswiper = new Swiper('.section-events__swiper', {
   },
 
   breakpoints: {
-    500: {
+    650: {
       slidesPerView: 2,
       spaceBetween: 34,
       slidesPerGroup: 2,
@@ -372,37 +372,6 @@ validation
 
   event.target.reset();
 });
-
-//карта
-ymaps.ready(init);
-var myMap;
-
-function init(){
-    myMap = new ymaps.Map ("map", {
-        center: [55.758468, 37.601088],
-        zoom: 14,
-        controls: ['geolocationControl', 'zoomControl']
-    },
-    {
-      suppressMapOpenBlock: true,
-      geolocationControlSize: "large",
-      geolocationControlPosition:  { top: "200px", right: "20px" },
-      geolocationControlFloat: 'none',
-      zoomControlSize: "small",
-      zoomControlFloat: "none",
-      zoomControlPosition: { top: "120px", right: "20px" }
-    }
-  );
-  myMap.behaviors.disable('scrollZoom');
-    var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
-      iconLayout:'default#image',
-      iconImageHref: 'img/Subtract.svg',
-      iconImageSize: [30,42],
-      iconImageOffset: [-3,-42],
-    });
-
-  myMap.geoObjects.add(myPlacemark);
-}
 
 //павный скрол на сайте
 document.querySelectorAll('.js-scroll-link').forEach(link => {

@@ -180,6 +180,15 @@ img {
   position: relative;
 }
 
+.section-nav__hidden {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .section-nav__list {
   display: flex;
   justify-content: space-between;
@@ -1322,6 +1331,10 @@ img {
   height: 100%;
 }
 
+.section-events__img {
+  width: 100%;
+}
+
 .section-events__content {
   display: flex;
   flex-direction: column;
@@ -1888,7 +1901,7 @@ img {
   }
 
   .section-nav__select:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 25px;
   }
 
   .section-feedback__container {

@@ -446,102 +446,102 @@ img {
 }
 
 .section-nav__tintoretto {
-  background-image: url('../img/jpg/real-1.jpg');
+  background-image: url('../img/jpg/real-1.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__friedrich {
-  background-image: url('../img/jpg/real-2.jpg');
+  background-image: url('../img/jpg/real-2.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__leonardo {
-  background-image: url('../img/jpg/real-3.jpg');
+  background-image: url('../img/jpg/real-3.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__verrocchio {
-  background-image: url('../img/jpg/real-4.jpg');
+  background-image: url('../img/jpg/real-4.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__monet {
-  background-image: url('../img/jpg/Imp-1.jpg');
+  background-image: url('../img/jpg/Imp-1.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__sisley {
-  background-image: url('../img/jpg/Imp-2.jpg');
+  background-image: url('../img/jpg/Imp-2.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__mane {
-  background-image: url('../img/jpg/Imp-3.jpg');
+  background-image: url('../img/jpg/Imp-3.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__renoir {
-  background-image: url('../img/jpg/Imp-4.jpg');
+  background-image: url('../img/jpg/Imp-4.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__van {
-  background-image: url('../img/jpg/post-1.jpg');
+  background-image: url('../img/jpg/post-1.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__cezanne {
-  background-image: url('../img/jpg/post-2.jpg');
+  background-image: url('../img/jpg/post-2.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__gauguin {
-  background-image: url('../img/jpg/post-3.jpg');
+  background-image: url('../img/jpg/post-3.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__sulfur {
-  background-image: url('../img/jpg/post-4.jpg');
+  background-image: url('../img/jpg/post-4.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__kandinsky {
-  background-image: url('../img/jpg/van-1.jpg');
+  background-image: url('../img/jpg/van-1.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__marinetti {
-  background-image: url('../img/jpg/van-2.jpg');
+  background-image: url('../img/jpg/van-2.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__malevich {
-  background-image: url('../img/jpg/van-3.jpg');
+  background-image: url('../img/jpg/van-3.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__picasso {
-  background-image: url('../img/jpg/van-4.jpg');
+  background-image: url('../img/jpg/van-4.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__carra {
-  background-image: url('../img/jpg/fut-1.jpg');
+  background-image: url('../img/jpg/fut-1.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__pratella {
-  background-image: url('../img/jpg/fut-2.jpg');
+  background-image: url('../img/jpg/fut-2.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__severini {
-  background-image: url('../img/jpg/fut-3.jpg');
+  background-image: url('../img/jpg/fut-3.webp');
   background-repeat: no-repeat;
 }
 
 .section-nav__balla {
-  background-image: url('../img/jpg/fut-4.jpg');
+  background-image: url('../img/jpg/fut-4.webp');
   background-repeat: no-repeat;
 }
 
@@ -641,15 +641,15 @@ img {
 }
 
 .section-banner__swiper-one {
-  background-image: url("../img/jpg/slaid-1.jpg");
+  background-image: url("../img/jpg/slaid-1.webp");
 }
 
 .section-banner__swiper-two {
-  background-image: url("../img/jpg/slaid-2.jpg");
+  background-image: url("../img/jpg/slaid-2.webp");
 }
 
 .section-banner__swiper-three {
-  background-image: url("../img/jpg/slaid-3.jpg");
+  background-image: url("../img/jpg/slaid-3.webp");
 }
 
 .section-banner__main-text {
@@ -733,7 +733,7 @@ img {
 
 /*секция галерея*/
 .section-gallery {
-  background-image: url('../img/jpg/gallery.jpg');
+  background-image: url('../img/jpg/gallery.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2042,15 +2042,15 @@ img {
   }
 
   .section-banner__swiper-one {
-    background-image: url("../img/jpg/slaid-1-1024.jpg");
+    background-image: url("../img/jpg/slaid-1-1024.webp");
   }
 
   .section-banner__swiper-two {
-    background-image: url("../img/jpg/slaid-2-1024.jpg");
+    background-image: url("../img/jpg/slaid-2-1024.webp");
   }
 
   .section-banner__swiper-three {
-    background-image: url("../img/jpg/slaid-3-1024.jpg");
+    background-image: url("../img/jpg/slaid-3-1024.webp");
   }
 
   .section-banner__main-text {
@@ -2264,15 +2264,15 @@ img {
   }
 
   .section-banner__swiper-one {
-    background-image: url("../img/jpg/slaid-1-768.jpg");
+    background-image: url("../img/jpg/slaid-1-768.webp");
   }
 
   .section-banner__swiper-two {
-    background-image: url("../img/jpg/slaid-2-768.jpg");
+    background-image: url("../img/jpg/slaid-2-768.webp");
   }
 
   .section-banner__swiper-three {
-    background-image: url("../img/jpg/slaid-3-768.jpg");
+    background-image: url("../img/jpg/slaid-3-768.webp");
   }
 
   .section-gallery__filter-cards {

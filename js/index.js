@@ -1,3 +1,7 @@
+var lazyLoadInstance = new LazyLoad({
+  // запуск ленивой загрузки
+});
+
 //выподающий список
 const params = {
   btnClassName: "section-nav__item-btn",

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/jquery.modal.min.css">
   <link rel="stylesheet" href="css/swiper-min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
   <script defer src="https://unpkg.com/@popperjs/core@2"></script>
   <script defer src="https://unpkg.com/tippy.js@6"></script>
   <script defer src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -57,9 +58,9 @@
         </button>
         <button aria-label="Найти" class="section-nav__search-button-two" type="button">
           <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
-            </svg>
+            <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white" />
+          </svg>
         </button>
         <div class="section-nav__search-two">
           <form action="#" class="section-nav__search-form-two">
@@ -165,7 +166,7 @@
           <div class="section-nav__search-one">
             <form action="#" class="section-nav__search-form-one">
               <button aria-label="Найти" class="section-nav__search-button" type="button" tabindex="-1">
-                <svg  aria-hidden="true" width="22.1" height="21.62" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg aria-hidden="true" width="22.1" height="21.62" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white" />
                 </svg>
@@ -246,50 +247,50 @@
               <div class="swiper-wrapper">
                 <a href="#modal-1" rel="modal:open" class="swiper-slide section-gallery__card">
                   <picture>
-                    <source media="(max-width: 600px)" srcset="img/jpg/gallery-1-mobile.webp">
-                    <source media="(max-width: 970px)" srcset="img/jpg/gallery-1-768.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/gallery-1-1024.webp">
-                    <img class="section-gallery__img" src="img/jpg/gallery-1.webp" alt="картина">
+                    <source media="(max-width: 600px)" data-srcset="img/jpg/gallery-1-mobile.webp">
+                    <source media="(max-width: 970px)" data-srcset="img/jpg/gallery-1-768.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/gallery-1-1024.webp">
+                    <img class="section-gallery__img lazy" data-src="img/jpg/gallery-1.webp" alt="картина">
                   </picture>
                 </a>
                 <a href="#modal-2" rel="modal:open" class="swiper-slide section-gallery__card">
                   <picture>
-                    <source media="(max-width: 600px)" srcset="img/jpg/gallery-2-mobile.webp">
-                    <source media="(max-width: 970px)" srcset="img/jpg/gallery-2-768.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/gallery-2-1024.webp">
-                    <img class="section-gallery__img" src="img/jpg/gallery-2.webp" alt="картина">
+                    <source media="(max-width: 600px)" data-srcset="img/jpg/gallery-2-mobile.webp">
+                    <source media="(max-width: 970px)" data-srcset="img/jpg/gallery-2-768.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/gallery-2-1024.webp">
+                    <img class="section-gallery__img lazy" data-src="img/jpg/gallery-2.webp" alt="картина">
                   </picture>
                 </a>
                 <a href="#modal-3" rel="modal:open" class="swiper-slide section-gallery__card">
                   <picture>
-                    <source media="(max-width: 600px)" srcset="img/jpg/gallery-3-mobile.webp">
-                    <source media="(max-width: 970px)" srcset="img/jpg/gallery-3-768.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/gallery-3-1024.webp">
-                    <img class="section-gallery__img" src="img/jpg/gallery-3.webp" alt="картина">
+                    <source media="(max-width: 600px)" data-srcset="img/jpg/gallery-3-mobile.webp">
+                    <source media="(max-width: 970px)" data-srcset="img/jpg/gallery-3-768.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/gallery-3-1024.webp">
+                    <img class="section-gallery__img lazy" data-src="img/jpg/gallery-3.webp" alt="картина">
                   </picture>
                 </a>
                 <a href="#modal-4" rel="modal:open" class="swiper-slide section-gallery__card">
                   <picture>
-                    <source media="(max-width: 600px)" srcset="img/jpg/gallery-4-mobile.webp">
-                    <source media="(max-width: 970px)" srcset="img/jpg/gallery-4-768.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/gallery-4-1024.webp">
-                    <img class="section-gallery__img" src="img/jpg/gallery-4.webp" alt="картина">
+                    <source media="(max-width: 600px)" data-srcset="img/jpg/gallery-4-mobile.webp">
+                    <source media="(max-width: 970px)" data-srcset="img/jpg/gallery-4-768.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/gallery-4-1024.webp">
+                    <img class="section-gallery__img lazy" data-src="img/jpg/gallery-4.webp" alt="картина">
                   </picture>
                 </a>
                 <a href="#modal-5" rel="modal:open" class="swiper-slide section-gallery__card">
                   <picture>
-                    <source media="(max-width: 600px)" srcset="img/jpg/gallery-5-mobile.webp">
-                    <source media="(max-width: 970px)" srcset="img/jpg/gallery-5-768.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/gallery-5-1024.webp">
-                    <img class="section-gallery__img" src="img/jpg/gallery-5.webp" alt="картина">
+                    <source media="(max-width: 600px)" data-srcset="img/jpg/gallery-5-mobile.webp">
+                    <source media="(max-width: 970px)" data-srcset="img/jpg/gallery-5-768.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/gallery-5-1024.webp">
+                    <img class="section-gallery__img lazy" data-src="img/jpg/gallery-5.webp" alt="картина">
                   </picture>
                 </a>
                 <a href="#modal-6" rel="modal:open" class="swiper-slide section-gallery__card">
                   <picture>
-                    <source media="(max-width: 600px)" srcset="img/jpg/gallery-6-mobile.webp">
-                    <source media="(max-width: 970px)" srcset="img/jpg/gallery-6-768.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/gallery-6-1024.webp">
-                    <img class="section-gallery__img" src="img/jpg/gallery-6.webp" alt="картина">
+                    <source media="(max-width: 600px)" data-srcset="img/jpg/gallery-6-mobile.webp">
+                    <source media="(max-width: 970px)" data-srcset="img/jpg/gallery-6-768.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/gallery-6-1024.webp">
+                    <img class="section-gallery__img lazy" data-src="img/jpg/gallery-6.webp" alt="картина">
                   </picture>
                 </a>
               </div>
@@ -305,13 +306,18 @@
         <div class="section-catalog__img-text-accordion">
           <div class="section-catalog__wrapper" id="catalog-tabs">
             <div class="section-catalog__img-text section-catalog__img-text--active" data-target="domenico">
-              <img class="section-catalog__img" src="img/jpg/image3.webp" alt="картина">
+              <picture>
+                <source media="(max-width: 725px)" data-srcset="img/jpg/image3-mobile.webp">
+                <source media="(max-width: 970px)" data-srcset="img/jpg/image3-768.webp">
+                <source media="(max-width: 1145px)" data-srcset="img/jpg/image3-1024.webp">
+                <img class="section-catalog__img lazy" data-src="img/jpg/image3.webp" alt="картина">
+              </picture>
               <h3 class="section-catalog__bac-three head-all-three">Доменико Гирландайо</h3>
               <span class="section-catalog__life">2 июня 1448 — 11 января 1494.</span>
               <p class="section-catalog__text-life">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
             </div>
             <div class="section-catalog__img-text" data-target="empty">
-              <img class="section-catalog__img" src="img/jpg/plug1.webp" alt="заглушка">
+              <img class="section-catalog__img lazy" data-src="img/jpg/plug1.webp" alt="заглушка">
               <h3 class="section-catalog__bac-three head-all-three">Что мы о нём знаем?</h3>
               <p class="section-catalog__text-plug">Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
               <a href="#gallery" class="section-catalog__gallery js-scroll-link">В галерею</a>
@@ -458,7 +464,7 @@
                 </div>
                 <div class="section-catalog__names">
                   <div class="section-catalog__img-plug-text section-catalog__content-wrap">
-                    <img class="section-catalog__img-plug" src="img/jpg/plug2.webp" alt="заглушка">
+                    <img class="section-catalog__img-plug lazy" data-src="img/jpg/plug2.webp" alt="заглушка">
                     <div class="section-catalog__plug-text">
                       <h3 class="section-catalog__plug-hethree head-all-three">Здесь пока пусто</h3>
                       <p class="section-catalog__plug">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -474,7 +480,7 @@
                 </div>
                 <div class="section-catalog__names">
                   <div class="section-catalog__img-plug-text section-catalog__content-wrap">
-                    <img class="section-catalog__img-plug" src="img/jpg/plug2.webp" alt="заглушка">
+                    <img class="section-catalog__img-plug lazy" data-src="img/jpg/plug2.webp" alt="заглушка">
                     <div class="section-catalog__plug-text">
                       <h3 class="section-catalog__plug-hethree head-all-three">Здесь пока пусто</h3>
                       <p class="section-catalog__plug">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -490,7 +496,7 @@
                 </div>
                 <div class="section-catalog__names">
                   <div class="section-catalog__img-plug-text section-catalog__content-wrap">
-                    <img class="section-catalog__img-plug" src="img/jpg/plug2.webp" alt="заглушка">
+                    <img class="section-catalog__img-plug lazy" data-src="img/jpg/plug2.webp" alt="заглушка">
                     <div class="section-catalog__plug-text">
                       <h3 class="section-catalog__plug-hethree head-all-three">Здесь пока пусто</h3>
                       <p class="section-catalog__plug">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -506,7 +512,7 @@
                 </div>
                 <div class="section-catalog__names">
                   <div class="section-catalog__img-plug-text section-catalog__content-wrap">
-                    <img class="section-catalog__img-plug" src="img/jpg/plug2.webp" alt="заглушка">
+                    <img class="section-catalog__img-plug lazy" data-src="img/jpg/plug2.webp" alt="заглушка">
                     <div class="section-catalog__plug-text">
                       <h3 class="section-catalog__plug-hethree head-all-three">Здесь пока пусто</h3>
                       <p class="section-catalog__plug">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -522,7 +528,7 @@
                 </div>
                 <div class="section-catalog__names">
                   <div class="section-catalog__img-plug-text section-catalog__content-wrap">
-                    <img class="section-catalog__img-plug" src="img/jpg/plug2.webp" alt="заглушка">
+                    <img class="section-catalog__img-plug lazy" data-src="img/jpg/plug2.webp" alt="заглушка">
                     <div class="section-catalog__plug-text">
                       <h3 class="section-catalog__plug-hethree head-all-three">Здесь пока пусто</h3>
                       <p class="section-catalog__plug">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -538,7 +544,7 @@
                 </div>
                 <div class="section-catalog__names">
                   <div class="section-catalog__img-plug-text section-catalog__content-wrap">
-                    <img class="section-catalog__img-plug" src="img/jpg/plug2.webp" alt="заглушка">
+                    <img class="section-catalog__img-plug lazy" data-src="img/jpg/plug2.webp" alt="заглушка">
                     <div class="section-catalog__plug-text">
                       <h3 class="section-catalog__plug-hethree head-all-three">Здесь пока пусто</h3>
                       <p class="section-catalog__plug">А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -563,12 +569,12 @@
               <li class="swiper-slide section-events__card">
                 <div class="section-events__wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic1-mobile.webp">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic1.webp">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic1-768.webp">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic1.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic1-1024.webp">
-                    <img class="section-events__img" src="img/jpg/pic1.webp" alt="заглушка">
+                    <source media="(max-width: 350px)" data-srcset="img/jpg/pic1-mobile.webp">
+                    <source media="(max-width: 650px)" data-srcset="img/jpg/pic1.webp">
+                    <source media="(max-width: 769px)" data-srcset="img/jpg/pic1-768.webp">
+                    <source media="(max-width: 962px)" data-srcset="img/jpg/pic1.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/pic1-1024.webp">
+                    <img class="section-events__img lazy" data-src="img/jpg/pic1.webp" alt="заглушка">
                   </picture>
                   <div class="section-events__content">
                     <div class="section-events__inner">
@@ -584,12 +590,12 @@
               <li class="swiper-slide section-events__card">
                 <div class="section-events__wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic2-mobile.webp">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic2.webp">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic2-768.webp">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic2.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic2-1024.webp">
-                    <img class="section-events__img" src="img/jpg/pic2.webp" alt="заглушка">
+                    <source media="(max-width: 350px)" data-srcset="img/jpg/pic2-mobile.webp">
+                    <source media="(max-width: 650px)" data-srcset="img/jpg/pic2.webp">
+                    <source media="(max-width: 769px)" data-srcset="img/jpg/pic2-768.webp">
+                    <source media="(max-width: 962px)" data-srcset="img/jpg/pic2.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/pic2-1024.webp">
+                    <img class="section-events__img lazy" data-src="img/jpg/pic2.webp" alt="заглушка">
                   </picture>
                   <div class="section-events__content">
                     <div class="section-events__inner">
@@ -605,12 +611,12 @@
               <li class="swiper-slide section-events__card">
                 <div class="section-events__wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic3-mobile.webp">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic3.webp">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic3-768.webp">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic3.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic3-1024.webp">
-                    <img class="section-events__img" src="img/jpg/pic3.webp" alt="заглушка">
+                    <source media="(max-width: 350px)" data-srcset="img/jpg/pic3-mobile.webp">
+                    <source media="(max-width: 650px)" data-srcset="img/jpg/pic3.webp">
+                    <source media="(max-width: 769px)" data-srcset="img/jpg/pic3-768.webp">
+                    <source media="(max-width: 962px)" data-srcset="img/jpg/pic3.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/pic3-1024.webp">
+                    <img class="section-events__img lazy" data-src="img/jpg/pic3.webp" alt="заглушка">
                   </picture>
                   <div class="section-events__content">
                     <div class="section-events__inner">
@@ -626,12 +632,12 @@
               <li class="swiper-slide section-events__card">
                 <div class="section-events__wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic4-mobile.webp">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic4.webp">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic4-768.webp">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic4.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic4-1024.webp">
-                    <img class="section-events__img" src="img/jpg/pic4.webp" alt="заглушка">
+                    <source media="(max-width: 350px)" data-srcset="img/jpg/pic4-mobile.webp">
+                    <source media="(max-width: 650px)" data-srcset="img/jpg/pic4.webp">
+                    <source media="(max-width: 769px)" data-srcset="img/jpg/pic4-768.webp">
+                    <source media="(max-width: 962px)" data-srcset="img/jpg/pic4.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/pic4-1024.webp">
+                    <img class="section-events__img lazy" data-src="img/jpg/pic4.webp" alt="заглушка">
                   </picture>
                   <div class="section-events__content">
                     <div class="section-events__inner">
@@ -647,12 +653,12 @@
               <li class="swiper-slide section-events__card">
                 <div class="section-events__wrapper">
                   <picture>
-                    <source media="(max-width: 350px)" srcset="img/jpg/pic5-mobile.webp">
-                    <source media="(max-width: 650px)" srcset="img/jpg/pic5.webp">
-                    <source media="(max-width: 769px)" srcset="img/jpg/pic5-768.webp">
-                    <source media="(max-width: 962px)" srcset="img/jpg/pic5.webp">
-                    <source media="(max-width: 1110px)" srcset="img/jpg/pic5-1024.webp">
-                    <img class="section-events__img" src="img/jpg/pic5.webp" alt="заглушка">
+                    <source media="(max-width: 350px)" data-srcset="img/jpg/pic5-mobile.webp">
+                    <source media="(max-width: 650px)" data-srcset="img/jpg/pic5.webp">
+                    <source media="(max-width: 769px)" data-srcset="img/jpg/pic5-768.webp">
+                    <source media="(max-width: 962px)" data-srcset="img/jpg/pic5.webp">
+                    <source media="(max-width: 1110px)" data-srcset="img/jpg/pic5-1024.webp">
+                    <img class="section-events__img lazy" data-src="img/jpg/pic5.webp" alt="заглушка">
                   </picture>
                   <div class="section-events__content">
                     <div class="section-events__inner">
@@ -696,15 +702,15 @@
           <button class="swiper-button-next section-projects__button-next"></button>
           <div class="swiper section-projects__swiper">
             <div class=" swiper-wrapper section-projects__partners">
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner1.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner2.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner3.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner4.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner5.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner6.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner7.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner8.webp" alt=""></a>
-              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png" src="img/jpg/partner9.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner1.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner2.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner3.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner4.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner5.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner6.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner7.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner8.webp" alt=""></a>
+              <a href="#" class="swiper-slide section-projects__partner js-scroll-link"><img class="section-projects__partner-png lazy" data-src="img/jpg/partner9.webp" alt=""></a>
             </div>
           </div>
         </div>
@@ -771,7 +777,7 @@
   <footer class="section-bed">
     <div class="container">
       <div class="section-bed__content">
-        <a class="section-bed__img-link"><img class="section-bed__img-logo" src="img/Logo.svg" alt="Логотип"></a>
+        <a href="#" class="section-bed__img-link"><img class="section-bed__img-logo lazy" data-src="img/Logo.svg" alt="Логотип"></a>
         <ul class="section-bed__socials">
           <li class="section-bed__social"><a aria-label="ВКонтакте" href="#" class="section-bed__social-link">
               <svg class="section-bed__social-svg" width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -797,10 +803,10 @@
   <div id="modal-2" class="modal modal--custom">
     <div class="modal__card">
       <picture>
-        <source media="(max-width: 669px)" srcset="img/jpg/gallery-2-modal-mobile.webp">
-        <source media="(max-width: 1010px)" srcset="img/jpg/gallery-2-modal-768.webp">
-        <source media="(max-width: 1200px)" srcset="img/jpg/gallery-2-modal.webp">
-        <img class="modal__card-img" src="img/jpg/gallery-2-modal.webp" alt="Картина">
+        <source media="(max-width: 669px)" data-srcset="img/jpg/gallery-2-modal-mobile.webp">
+        <source media="(max-width: 1010px)" data-srcset="img/jpg/gallery-2-modal-768.webp">
+        <source media="(max-width: 1200px)" data-srcset="img/jpg/gallery-2-modal.webp">
+        <img class="modal__card-img lazy" src="img/jpg/gallery-2-modal.webp" alt="Картина">
       </picture>
       <div class="modal__content">
         <h2 class="modal__title">Казимир Малевич</h2>
@@ -812,7 +818,8 @@
       </div>
     </div>
   </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="js/mymap.js"></script>
 </body>
-<script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
-<script defer src="js/mymap.js"></script>
+
 </html>
